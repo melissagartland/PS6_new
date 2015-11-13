@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated Nov 13, 2014 2:49:57 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="domain.PersonDomainModel" table="stu">
+
+		<id name="personID" type="uuid-char">
+			<column name="personID" length="40" />
+		</id>
+
+		<property name="FirstName" type="string">
+			<column name="FirstName" length="20" not-null="true" />
+		</property>
+		<property name="MiddleName" type="string">
+			<column name="MiddleName" length="20" not-null="true" />
+		</property>
+
+		<property name="LastName" type="string">
+			<column name="LastName" length="20" not-null="true" />
+		</property>
+
+		<property name="DOB" type="date">
+			<column name="DOB" length="7" not-null="true" />
+		</property>
+		
+		<property name= "street" type= "string">
+		    <column name= "street" length= "30" not-null= "true" />
+		</property>
+		
+		<property name= "postalCode" type= "int">
+		    <column name= "PostalCode" length= "10" not-null= "true" />
+		</property>
+		
+		<property name= "city" type= "string">
+		    <column name= "city" lenght= "20" not-null= "true" />
+		</property>
+		
+	</class>
+</hibernate-mapping>
